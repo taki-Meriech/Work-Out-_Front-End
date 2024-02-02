@@ -1,0 +1,8 @@
+.buttom{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    gap: 30px;
+    height: 100%;
+}
