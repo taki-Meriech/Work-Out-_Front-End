@@ -10,8 +10,7 @@ function Lists() {
   useEffect(() => {
     const getWorkout = async () => {
       try {
-        const response = await axios.get("http://localhost:4000/api/");
-        console.log(response.data);
+        const response = await axios.get("https://workoutbackend-wtr9.onrender.com/api/");
         setData(response.data);
       } catch (error) {
         console.log("error to get data", error);
@@ -43,7 +42,7 @@ function Lists() {
   );
 }
  const HandelDelete =(id)=>{
-  axios.delete(`http://localhost:4000/api/${id}`)
+  axios.delete(`https://workoutbackend-wtr9.onrender.com/api/${id}`)
  }
 
 export default Lists;
