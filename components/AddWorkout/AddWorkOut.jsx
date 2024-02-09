@@ -15,7 +15,7 @@ function AddWorkOut() {
 
 
     try {
-      const response = await axios.post("https://workoutbackend-wtr9.onrender.com", {
+      const response = await axios.post("https://workoutbackend-wtr9.onrender.com/api/", {
         Title:title,
         Load:load,
         Reps:reps,
